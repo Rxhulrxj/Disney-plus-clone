@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
+import Companies from './Companies';
 import Imgsilder from './Imgsilder';
 
 function Home() {
     return (
         <Container>
             <Imgsilder />
+            <Companies />
         </Container>
     )
 }

@@ -17,13 +17,16 @@ function Imgsilder() {
     return (
         <Carousel  {...settings}>
             <Wrap>
-                <img src="./Assests/images/slider-badging.jpg"/>
+                <img src="./Assests/images/de467fd7-4f10-42f3-b9ab-57e5a91e0f47-LucaHero.png"/>
             </Wrap>
             <Wrap>
-                <img src="./Assests/images/slider-badag.jpg"/>
+                <img src="./Assests/images/cruella.png"/>
             </Wrap>
             <Wrap>
                 <img src="./Assests/images/slider-scale.jpg"/>
+            </Wrap>
+            <Wrap>
+                <img src="./Assests/images/Black-Widow.png"/>
             </Wrap>
         </Carousel>
     )
@@ -35,12 +38,29 @@ export default Imgsilder
 const Carousel = styled(Slider)`
    marigin-top: 20px;
 
+   & > button {
+    opacity: 0;
+    height: 100%;
+    width: 5vw;
+    z-index: 1;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 0.2s ease 0s;
+    }
+  }
+
    .slick-list {
        overflow: visible;
    }
-   button {
-     z-index: 1;
-   }
+
+   .slick-prev {
+    left: -75px;
+  }
+
+  .slick-next {
+    right: -75px;
+  }
 `
 const Wrap = styled.div`
    img {
