@@ -2,12 +2,14 @@ import React from 'react'
 import styled from 'styled-components';
 import Companies from './Companies';
 import Imgsilder from './Imgsilder';
+import Movies from './Movies';
 
 function Home() {
     return (
         <Container>
             <Imgsilder />
             <Companies />
+            <Movies />
         </Container>
     )
 }
