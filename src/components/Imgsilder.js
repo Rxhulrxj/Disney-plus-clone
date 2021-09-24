@@ -19,22 +19,22 @@ function Imgsilder() {
         <Carousel  {...settings}>
             <Wrap>
                 <a>
-                <img src="./Assests/images/de467fd7-4f10-42f3-b9ab-57e5a91e0f47-LucaHero.png"/>
+                <img src="./Assests/images/de467fd7-4f10-42f3-b9ab-57e5a91e0f47-LucaHero.png" alt="img"/>
                 </a>
             </Wrap>
             <Wrap>
             <a>
-                <img src="./Assests/images/cruella.png"/>
+                <img src="./Assests/images/cruella.png" alt="img"/>
             </a>
             </Wrap>
             <Wrap>
             <a>
-                <img src="./Assests/images/slider-scale.jpg"/>
+                <img src="./Assests/images/slider-scale.jpg" alt="img"/>
             </a>
             </Wrap>
             <Wrap>
                 <a>
-                <img src="./Assests/images/Black-Widow.png"/>
+                <img src="./Assests/images/Black-Widow.png" alt="img"/>
                 </a>
             </Wrap>
         </Carousel>
