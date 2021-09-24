@@ -6,6 +6,7 @@ import Movies from './Movies';
 import db from '../firebase';
 import {useDispatch} from 'react-redux';
 import {setMovies} from '../features/movie/movieSlice';
+import Header from './Header';
 
 function Home() {
     const dispatch = useDispatch();
@@ -19,7 +20,9 @@ function Home() {
     }, [])
 
     return (
+        
         <Container>
+            {/* <Header /> */}
             <Imgsilder />
             <Companies />
             <Movies />

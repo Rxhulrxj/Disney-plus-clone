@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
 import {useParams} from 'react-router-dom';
 import db from '../firebase';
+import Header from './Header';
 
 function Details() {
     const { id } = useParams();

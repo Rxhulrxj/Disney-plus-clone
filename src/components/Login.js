@@ -1,7 +1,55 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import styled from 'styled-components';
+import {auth, provider} from '../firebase'
+import { useHistory } from "react-router-dom";
+import {selectUserName, selectUserPhoto, setUserLogin, setSignOut} from '../features/user/userSlice';
+import {useSelector, useDispatch} from 'react-redux';
 
 function Login() {
+  const dispatch = useDispatch();
+  const history = useHistory();
+  const userName = useSelector(selectUserName);
+  const userPhoto = useSelector(selectUserPhoto);
+
+  useEffect(() => {
+    auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        setUser(user);
+        history.push("/home");
+      }
+    });
+  }, [userName]);
+
+  const handleAuth = () => {
+    if (!userName) {
+      auth
+        .signInWithPopup(provider)
+        .then((result) => {
+          setUser(result.user);
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+    } else if (userName) {
+      auth
+        .signOut()
+        .then(() => {
+          dispatch(setSignOut());
+          history.push("/login");
+        })
+        .catch((err) => alert(err.message));
+    }
+  };
+  const setUser = (user) => {
+    dispatch(
+      setUserLogin({
+        name: user.displayName,
+        email: user.email,
+        photo: user.photoURL,
+      })
+    );
+  };
+
     return (
         <Container>
           <CTA>
@@ -11,13 +59,13 @@ function Login() {
               </Description>
               <Buttons>
               <SignButton>
-               <span>Sign Up Now</span>
+               <span onClick={handleAuth}>Sign Up Now</span>
               </SignButton>
               <Line1>
                 <span></span>
               </Line1>
               <LogButton>
-                <span>Login Now</span>
+                <span onClick={handleAuth}>Login Now</span>
               </LogButton>
               </Buttons>
               <Info>
