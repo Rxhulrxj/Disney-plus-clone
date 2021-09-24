@@ -15,7 +15,7 @@ function App() {
           <Route path= "/login">
           <Login />
           </Route>
-          <Route path="/detail">
+          <Route path="/detail/:id">
             <Details />
           </Route>
        

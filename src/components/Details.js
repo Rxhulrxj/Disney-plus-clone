@@ -1,37 +1,56 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
-
+import {useParams} from 'react-router-dom';
+import db from '../firebase';
 
 function Details() {
+    const { id } = useParams();
+    const [movies, setMovies] = useState();
+
+    useEffect(() => {
+        //grab the movie
+        db.collection("movies")
+        .doc(id)
+        .get()
+        .then((doc) => {
+            if(doc.exists){
+                //save the movie data
+                setMovies(doc.data());
+            } else {
+                //redirect to home page
+
+            }
+        });
+    },[id]);
     return (
         <Container>
             <Background>
-                <img src="./Assests/images/scale.jpg" alt="bg" />
+                <img src={movies && movies.backgroundImg} alt={movies && movies.title}/>
             </Background>
             <Imagetitle>
-                <img src="./Assests/images/scale.png" alt="title" />
+                <img src={movies && movies.titleImg} alt={movies && movies.title}/>
             </Imagetitle>
             <Controls>
                 <PlayButton>
-                     <img src="./Assests/images/play-icon-black.png" alt="play"/>
+                     <img src="https://raw.githubusercontent.com/CleverProgrammers/cp-disney-plus-clone/master/public/images/play-icon-black.png" alt="play"/>
                      <span>PLAY</span>
                 </PlayButton>
                 <TrailerButton>
-                      <img src="./Assests/images/play-icon-white.png" alt="trailerplay"/>
+                      <img src="https://github.com/CleverProgrammers/cp-disney-plus-clone/blob/master/public/images/play-icon-white.png?raw=true" alt="trailerplay"/>
                       <span>TRAILER</span>
                 </TrailerButton>
                 <AddButton>
                        <span>+</span>
                 </AddButton>
                 <GroupButton>
-                      <img src="./Assests/images/group-icon.png" alt="group"/>
+                      <img src="https://github.com/CleverProgrammers/cp-disney-plus-clone/blob/master/public/images/group-icon.png?raw=true" alt="group"/>
                 </GroupButton>            
             </Controls>
             <Subtitle>
-                2018 • 7m • Family, Fantasy, Kids, Animation
+                {movies && movies.subTitle}
             </Subtitle>
             <Description>
-            A Chinese mom who’s sad when her grown son leaves home gets another chance at motherhood when one of her dumplings springs to life. But she finds that nothing stays cute and small forever.
+            {movies && movies.description}
             </Description>
 
         </Container>
