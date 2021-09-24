@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 import Slider from "react-slick";
 import {Link} from 'react-router-dom';
-import {selectOriginal} from '../features/movie/movieSlice'
+import {selectTrending} from '../features/movie/movieSlice'
 import {useSelector} from 'react-redux';
 
-function Movies() {
+function trending(props) {
     const settings = {
         infinite: false,
         speed: 500,
@@ -19,7 +19,6 @@ function Movies() {
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              dots: true
             }
           },
           {
@@ -39,10 +38,10 @@ function Movies() {
           }
         ]
       };
-    const movies = useSelector(selectOriginal);
+    const movies = useSelector(selectTrending);
     return (
         <Container>
-            <h2>DISNEY ORIGINALS</h2><br/>
+            <h2>TRENDING</h2><br/>
             <Content {...settings}>
               {movies &&
                   movies.map((movie) => (
@@ -58,7 +57,7 @@ function Movies() {
     )
 }
 
-export default Movies
+export default trending;
 
 const Container = styled.div`
 `
