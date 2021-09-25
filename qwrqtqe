@@ -1,0 +1,77 @@
+[33mcommit 4dbdafe480c0c1e6bea1d7384b50b6db7c642156[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Sat Sep 25 21:15:59 2021 +0530
+
+    errors fixed
+
+[33mcommit 40a166c8d5c108403948cac2c85b2ea62f08a14e[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Fri Sep 24 22:46:58 2021 +0530
+
+    ADDED more rows
+
+[33mcommit d0de27d3edf293da1dff488c0e8f11b83cb345b1[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Fri Sep 24 21:26:11 2021 +0530
+
+    almost done need to add more movierows
+
+[33mcommit 1a84e94459a4699afc2b017a9c2e22f56d330bd3[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Fri Sep 24 16:52:35 2021 +0530
+
+    mo
+
+[33mcommit 104f3ec9c7de513eb3ee63326b86eaeed0da449e[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Fri Sep 24 12:35:58 2021 +0530
+
+    movie taken from db
+
+[33mcommit f24a48fa75b1c6edcde9213e5be6043e7f7f69af[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Fri Sep 24 11:29:02 2021 +0530
+
+    templete completed
+
+[33mcommit 004e0882251b62ebbbda1ad112b74d833bd1ad72[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Tue Sep 21 21:29:17 2021 +0530
+
+    login
+
+[33mcommit b13cf6f25496bb7b546fa2ec3cb5958315b3075a[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Tue Sep 21 19:04:32 2021 +0530
+
+    Added detail.js
+
+[33mcommit 7d98080693288850447f84ecb0eaccfc55257197[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Tue Sep 21 16:57:12 2021 +0530
+
+    Added movie.js
+
+[33mcommit de83cf29eee1e8b5e86308dfa746058a4182af03[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Tue Sep 21 16:26:21 2021 +0530
+
+    Added companies
+
+[33mcommit 1c49b36f01ad2fcfe6d8d5ee8b1c2793e9ec9c14[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Tue Sep 21 15:07:30 2021 +0530
+
+    Added imagesilder
+
+[33mcommit c7fa38198f3b7771c9865c7040a4fd8bf2377682[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Mon Sep 20 23:15:39 2021 +0530
+
+    Added Header
+
+[33mcommit 263ecab49d9eaef8e21646f335b0cc5f1bf04131[m
+Author: Rahul Raj N <rahulrajachu14102000@gmail.com>
+Date:   Sat Sep 18 21:48:40 2021 +0530
+
+    Initialize project using Create React App

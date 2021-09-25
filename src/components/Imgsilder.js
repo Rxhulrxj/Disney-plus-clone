@@ -7,13 +7,12 @@ import "slick-carousel/slick/slick-theme.css";
 function Imgsilder() {
 
     let settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slideToShow: 1,
-        slideToScroll: 1,
-        autoplay: true,
-        pauseOnHover: true
+      className: "",
+      dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true
     }
     return (
         <Carousel  {...settings}>
@@ -77,6 +76,10 @@ const Carousel = styled(Slider)`
 
   .slick-next {
     right: -75px;
+  }
+
+  @media (max-width:768px) {
+    margin-top: 85px;
   }
 `
 const Wrap = styled.div`

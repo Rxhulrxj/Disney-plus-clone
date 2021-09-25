@@ -186,11 +186,11 @@ function Header (){
     border-radius: 50%;
     cursor: pointer;
     display: flex;
-    margin-left: 170px;
+    margin-left: 17px;
   }
 
   @media (max-width: 295px) {
-    margin-left: 90px;
+    margin-left: 65px;
   }
   `;
   
