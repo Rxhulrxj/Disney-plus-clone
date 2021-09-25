@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import {selectRecommend} from '../features/movie/movieSlice'
 import {useSelector} from 'react-redux';
 
-function recommends(props) {
+function Recommends(props) {
     const settings = {
         infinite: false,
         speed: 500,
@@ -57,7 +57,7 @@ function recommends(props) {
     )
 }
 
-export default recommends;
+export default Recommends;
 
 const Container = styled.div`
 `

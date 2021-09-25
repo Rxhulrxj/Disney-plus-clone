@@ -35,7 +35,7 @@ function Header (){
           .signOut()
           .then(() => {
             dispatch(setSignOut());
-            history.push("/login");
+            history.push("/");
           })
           .catch((err) => alert(err.message));
       }

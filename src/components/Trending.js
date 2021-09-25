@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import {selectTrending} from '../features/movie/movieSlice'
 import {useSelector} from 'react-redux';
 
-function trending(props) {
+function Trending(props) {
     const settings = {
         infinite: false,
         speed: 500,
@@ -57,7 +57,7 @@ function trending(props) {
     )
 }
 
-export default trending;
+export default Trending;
 
 const Container = styled.div`
 `
