@@ -8,7 +8,6 @@ import {useSelector} from 'react-redux';
 function Movies() {
     const settings = {
         infinite: false,
-        speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,
@@ -19,7 +18,6 @@ function Movies() {
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              dots: true
             }
           },
           {
@@ -34,7 +32,8 @@ function Movies() {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              // initialSlide: 0,
             }
           }
         ]

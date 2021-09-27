@@ -1,44 +1,52 @@
+## DisneyPlus-Clone
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+## Quick Links
 
-In the project directory, you can run:
+[Live Demo](https://disneyplusclone0.web.app)
 
-### `npm start`
+[Tech Stack](#tech-stack)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Author](#author)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[License](#license)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- [React](https://reactjs.org) 
+  - Create-react-app with highly complex frontend structure
+- [Redux](https://redux.js.org/) 
+  - State management and redux thunk for asynchronous api calls
+- [Firebase](https://firebase.google.com/) 
+  - Backend and database with firestore for users
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start) 
+  - Complex and dynamic route generation 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### User Stories
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Users can safely sign up and sign in using Google account.
+- Limited Collections of popular movies for recommendations from disney.
+- Movie  dynamically generated for every single movie
+- Carousel created from scratch by using jquery
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Current Plans for Expansion
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Implement more features as a personal practice project
+- Implementing search feature,add to list feature,profile-by-profile recommendations,addition of more movies and shows.
+- Add user profile data, profile picture and personal data setup.
+- Add paginations and setup category sorting.
+- Add python scraper to customize recommendations for each user.
+- Move backend and database to node and express.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author
 
-## Learn More
+- Rahul Raj N
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
