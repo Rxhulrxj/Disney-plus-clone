@@ -10,7 +10,7 @@ function Movies() {
         infinite: false,
         slidesToShow: 4,
         slidesToScroll: 4,
-        initialSlide: 0,
+        initialSlide: 1,
         responsive: [
           {
             breakpoint: 1024,
@@ -25,7 +25,7 @@ function Movies() {
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
-              initialSlide: 2
+              initialSlide: 1,
             }
           },
           {
@@ -33,7 +33,7 @@ function Movies() {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              // initialSlide: 0,
+               initialSlide: 1,
             }
           }
         ]
